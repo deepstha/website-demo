@@ -1,12 +1,12 @@
 @import '../utils/variables'
-
+@import '../helpers/responsive'
 .btn
     position: relative
     display: inline-block
     box-sizing: border-box
     border: none
     border-radius: 0
-    font-size: 18px
+    font-size: 13px
     padding: 18px 25px
     min-width: 170px
     min-height: 57px
@@ -23,6 +23,8 @@
     outline: none
     cursor: pointer
     transition: box-shadow 0.2s
+    +tablet
+        font-size: 18px
     & + .btn 
         margin-left: 7px
 

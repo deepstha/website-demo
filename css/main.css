@@ -271,7 +271,7 @@ p {
           box-sizing: border-box;
   border: none;
   border-radius: 0;
-  font-size: 18px;
+  font-size: 13px;
   padding: 18px 25px;
   min-width: 170px;
   min-height: 57px;
@@ -292,6 +292,12 @@ p {
   transition: -webkit-box-shadow 0.2s;
   transition: box-shadow 0.2s;
   transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+}
+
+@media screen and (min-width: 768px), print {
+  .btn {
+    font-size: 18px;
+  }
 }
 
 .btn + .btn {
