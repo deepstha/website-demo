@@ -1,0 +1,22 @@
+@import 'mixins/mixin'
+
+@-webkit-keyframes popOut
+    0%
+        opacity: 0
+        +transform(scale(0.9))
+        top: 40
+    100%
+        opacity: 1
+        +transform(scale(1))
+        top: 56px
+
+
+@keyframes popOut
+    0%
+        opacity: 0
+        +transform(scale(0.9))
+        top: 40px
+    100%
+        opacity: 1
+        +transform(scale(1))
+        top: 56px

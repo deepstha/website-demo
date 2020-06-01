@@ -1,0 +1,26 @@
+@import '../utils/variables'
+@import 'mixins/mixin'
+
+.floating
+    &-label
+        font-size: 1rem
+        font-weight: 400
+        letter-spacing: .009375em
+        position: absolute
+        left: 0
+        transform-origin: left top
+        line-height: 1.15rem
+        text-align: left
+        -o-text-overflow: ellipsis
+        text-overflow: ellipsis
+        white-space: nowrap
+        cursor: text
+        overflow: hidden
+        will-change: transform
+        +transition(0.2s all linear)
+        &.is
+            &-focused
+                color: $color-primary
+            &-focused, &-active
+                +transform(translateY(-70%) scale(.75))
+                font-size: 1rem

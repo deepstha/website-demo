@@ -1,0 +1,85 @@
+@import '../utils/variables'
+.header
+    position: absolute
+    top: 0
+    width: 100%
+    z-indx: 1
+    background-color: transparent
+    +cubic
+    &.sticky
+        &-header
+            position: fixed
+            width: 100%
+            background-color: rgba($color-black, 0.8)
+            z-index: 100
+            .navbar
+                padding: 5px 10px
+                &-brand
+                    &.logo
+                        max-width: 135px
+                        img
+                            max-width: 100%
+
+    .navbar
+        .navbar
+            &-collapse
+                +tablet-max
+                    background-color: rgba($color-primary, 0.96)
+                    padding: 20px
+                    color: $color-white
+                    z-index: 10
+                
+        &-dark
+            .navbar
+                &-toggle
+                    &:focus
+                        outline: none !important
+            .nav
+                &-item
+                    margin-bottom: 30px
+                    border-bottom: 1px solid rgba($color-white, 0.2)
+                    .nav
+                        &-link
+                            +tablet-max
+                                padding-bottom: 15px
+                    +desktop
+                        margin-bottom: 0
+                        border: none
+                    
+.navbar
+    &-brand
+        &.logo
+            max-width: 195px
+            +cubic
+            img
+                max-width: 100%
+    &-dark
+        .nav
+            &-item
+                .nav
+                    &-link
+                        color: $color-white
+                        padding: 0 15px
+                        letter-spacing: 2px
+                        line-height: 18px
+                        font-size: 12px
+                        text-transform: uppercase
+                        +laptop
+                            font-size: 15px
+                        &:hover, &:active
+                            color: #BDBDBD
+                        &.active
+                            color: #BDBDBD
+                &.active
+                    .nav
+                        &-link
+                            color: #BDBDBD
+
+                .nav
+                    &-link
+                        color: $color-white
+                        padding: 0 15px
+                        letter-spacing: 2px
+                        line-height: 18px
+                        font-size: 15px
+                        text-transform: uppercase

@@ -1,0 +1,35 @@
+@import '../utils/variables'
+@import '../utils/mixins/mixin'
+@import '../helpers/responsive'
+
+.owl-stage-outer, .owl-stage, .owl-carousel, .owl-carousel .owl-item, .item, 
+    height: 100%
+
+.item
+    height: auto
+
+.owl-carousel
+    .owl
+        &-dots
+
+            position: absolute
+            top: auto
+            bottom: 135px
+            width: 125px
+            display: none
+            +tablet
+                bottom: 37%
+            +desktop
+                +display-flex
+            +widescreen
+            
+            .owl
+                &-dot
+                    background-color: rgba($color-white, 0.3)
+                    padding: 2px
+                    margin-right: 5px
+                    width: 100%
+                    &.active
+                        background-color: rgba($color-white, 1)
+
+        

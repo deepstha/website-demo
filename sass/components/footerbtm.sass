@@ -1,0 +1,64 @@
+@import '../utils/mixins/mixin'
+@import '../helpers/responsive'
+
+.footer
+    min-height: 200px
+    padding: 20px 0
+    position: relative
+    color: white
+    +tablet
+        padding: 20px
+    p
+        margin-bottom: 0
+        font-size: 12px
+        font-weight: 300
+        letter-spacing: 2.5px
+        line-height: 14px
+        text-transform: uppercase
+
+    .navbar
+        &-brand
+            max-width: 140px
+            +laptop
+                max-width: 195px
+            & +
+                span
+                    font-size: 14px
+                    font-weight: 600
+                    letter-spacing: 3.5px
+                    margin-left: 15px
+                    line-height: 24px
+                    position: relative
+                    top: 5px
+                    font-family: 'Altair-Bold', sans-serif
+                    text-transform: uppercase
+                    display: block
+                    +laptop
+                        font-size: 20px
+
+    .block
+        &_overlay
+            +gradient(#001745, #0055B8)
+            opacity: 0.6
+            width: 100%
+    .navbar
+        &-dark
+            .nav
+                &-item
+                    .nav
+                        &-link
+                            color: $color-white
+                            padding: 0 5px
+                            letter-spacing: 2px
+                            line-height: 16px
+                            font-size: 12px
+                            text-transform: uppercase
+                            +laptop
+                                font-size: 14px
+                            &:hover, &:active
+                                color: #BDBDBD
+                    &.active
+                        .nav
+                            &-link
+                                color: #BDBDBD
+

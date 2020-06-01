@@ -1,0 +1,41 @@
+@import '../utils/variables'
+@import 'responsive'
+@import '../utils/mixins/mixin'
+@import '../utils/mixins/fontFace'
+
+.title
+    &-border
+        margin-bottom: 45px
+        position: relative
+        &:after
+            content: ""
+            border-bottom: 2px solid
+            width: 65px
+            display: block
+            padding-top: 7px
+            position: absolute
+
+    &-1
+        font-size: 1rem
+        font-family: 'Altair-Bold', sans-serif
+        text-transform: uppercase
+        letter-spacing: 2px
+        line-height: 36px
+        span
+            opacity: 0.8
+            margin-right: 12px
+            display: inline-block
+        +desktop
+            font-size: 1.5rem
+    &-2
+        font-size: 1rem
+        text-transform: uppercase
+        font-family: 'Altair-Bold'
+        letter-spacing: 3px
+        line-height: 36px
+        span
+            opacity: 0.8
+            margin-right: 12px
+            display: inline-block
+        +desktop
+            font-size: 1.85rem

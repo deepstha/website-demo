@@ -1,0 +1,98 @@
+@import '../utils/variables'
+@import '../helpers/responsive'
+@import '../utils/mixins/mixin'
+
+// body content
+
+.block
+    &__section
+        position: relative
+        padding: 95px 40px 40px
+        min-height: 360px
+        display: flex
+        overflow: hidden
+        background-color: $color-white
+        background-attachment: fixed
+        background-position: center
+        +mobile-sm
+            padding: 100px 80px 40px
+            min-height: 390px
+        +widescreen
+            min-height: 700px
+        &--even
+            color: $color-white
+            min-height: 600px
+            +tablet
+                padding: 140px 0 65px 100px
+            +desktop
+                padding: 206px 0 164px 246px
+                min-height: 700px
+            .block
+                &_absolute
+                    &--wrapper
+                        position: relative
+                        width: 80%
+                        top: -20px
+                        z-index: 1
+                    &-item
+                        right: -110px
+                        top: 395px
+                        position: absolute
+                        opacity: 0.5
+                        &:last-child
+                            right: -492px
+                            top: 207px
+
+        &--odd
+            color: $color-primary
+            p
+                color: $color-black
+            +tablet
+                padding: 50px 100px 50px 0
+            +desktop
+                min-height: 600px
+                padding: 50px 180px 50px 0
+            +widescreen
+                padding: 206px 246px 0 0
+            .title
+                &-border
+                    &:after
+                        right: 0
+                        left: auto
+            .block
+                &_absolute
+                    &--wrapper
+                        top: 100px
+                        left: -40px
+                        +desktop
+                            left: 0
+                            top: 20px
+                    &-item
+                        position: relative
+                        z-index: 1
+                        &--left
+                            position: relative
+                            left: -110px
+                            top: 700px
+                            z-index: 0
+                            +desktop
+                                left: -90px
+                                top: 600px
+        &-content
+            max-width: 452px
+            position: 
+            z-index: 1
+            p
+                span
+                    margin-bottom: 35px
+                    display: block
+                    font-weight: 300
+                    line-height: 35px
+                    font-size: 20px
+                    letter-spacing: 1.5px
+        .block
+            &_absolute
+                &--wrapper
+                    +tablet-max
+                        opacity: 0.4
+                        width: 68%
