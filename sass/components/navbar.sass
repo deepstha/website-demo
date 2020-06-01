@@ -1,4 +1,6 @@
 @import '../utils/variables'
+@import '../helpers/responsive'
+@import '../utils/mixins/mixin'
 .header
     position: absolute
     top: 0
@@ -45,6 +47,8 @@
                 &-item
                     margin-bottom: 30px
                     border-bottom: 1px solid rgba($color-white, 0.2)
+                    +tablet
+                        border: none
                     .nav
                         &-link
                             +tablet-max
