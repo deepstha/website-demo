@@ -592,15 +592,10 @@ p {
   outline: none !important;
 }
 
-.header .navbar-dark .nav-item {
-  margin-bottom: 30px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-@media screen and (min-width: 768px), print {
+@media screen and (max-width: 992px) {
   .header .navbar-dark .nav-item {
-    border: none;
-    margin-bottom: 0;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
 }
 
