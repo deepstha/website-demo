@@ -873,6 +873,7 @@ p {
   text-transform: uppercase;
   letter-spacing: 2px;
   line-height: 36px;
+  font-weight: 600;
 }
 
 .title-1 span {
@@ -893,6 +894,7 @@ p {
   font-family: 'Altair-Bold';
   letter-spacing: 3px;
   line-height: 36px;
+  font-weight: 600;
 }
 
 .title-2 span {
