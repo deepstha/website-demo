@@ -1,7 +1,8 @@
 $(document).ready(function () {
         //Parallax 
         var rellax = new Rellax('.rellax');
-        //Parallax 
+
+        //owl-carousel with animation 
         function t(t, e) {
             t.each(function () {
                 var t = $(this),
@@ -29,20 +30,22 @@ $(document).ready(function () {
             t($(".owl-item", i).eq(e.item.index).find("[data-animation-in]"), "in");
         }),
 
+        //Sticky header
         $(window).scroll(function () {
             $(this).scrollTop() > 1 ? $(".header").addClass("sticky-header").fadeTo(400, 1) : $(".header").removeClass("sticky-header");
         }),
 
-        $(document).on("scroll", e),
-            $('a.collapsed[href^="#"]').on("click", function (t) {
-                t.preventDefault(),
-                $(document).off("scroll"),
-                $("a").each(function () {
-                    $(this).removeClass("active");
-                }),
-                $(this).addClass("active");
-                
-            });
+        //Navbar toggle active
 
-        (jQuery);
+        $('a.collapsed[href^="#"]').on("click", function (t) {
+            t.preventDefault(),
+            $(document).off("scroll"),
+            $("a").each(function () {
+                $(this).removeClass("active");
+            }),
+            $(this).addClass("active");
+            
+        });
+
+       
 });
