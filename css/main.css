@@ -600,7 +600,17 @@ p {
 @media screen and (min-width: 768px), print {
   .header .navbar-dark .nav-item {
     border: none;
+    margin-bottom: 0;
   }
+}
+
+.header .navbar-dark .nav-item .nav-link {
+  color: #ffffff;
+  padding: 0 15px;
+  letter-spacing: 2px;
+  line-height: 18px;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 992px) {
@@ -608,6 +618,20 @@ p {
     padding-bottom: 15px;
     padding-left: 0;
   }
+}
+
+@media screen and (min-width: 1280px) {
+  .header .navbar-dark .nav-item .nav-link {
+    font-size: 15px;
+  }
+}
+
+.header .navbar-dark .nav-item .nav-link:hover, .header .navbar-dark .nav-item .nav-link:active {
+  color: #BDBDBD;
+}
+
+.header .navbar-dark .nav-item .nav-link.active {
+  color: #BDBDBD;
 }
 
 @media screen and (min-width: 1023px) {
@@ -624,6 +648,12 @@ p {
 }
 
 @media screen and (min-width: 768px), print {
+  .navbar-brand.logo {
+    max-width: 160px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
   .navbar-brand.logo {
     max-width: 195px;
   }
