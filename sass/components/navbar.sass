@@ -16,12 +16,16 @@
                 padding: 5px 10px
                 &-brand
                     &.logo
-                        max-width: 135px
+                        max-width: 120px
+                        +tablet
+                            max-width: 135px
                         img
                             max-width: 100%
 
     .navbar
         .navbar
+            &-toggler
+                padding: 0
             &-collapse
                 +tablet-max
                     background-color: rgba($color-primary, 0.96)
@@ -49,7 +53,9 @@
 .navbar
     &-brand
         &.logo
-            max-width: 195px
+            max-width: 150px
+            +tablet
+                max-width: 195px
             +cubic
             img
                 max-width: 100%

@@ -470,11 +470,21 @@ p {
 }
 
 .header.sticky-header .navbar-brand.logo {
-  max-width: 135px;
+  max-width: 120px;
+}
+
+@media screen and (min-width: 768px), print {
+  .header.sticky-header .navbar-brand.logo {
+    max-width: 135px;
+  }
 }
 
 .header.sticky-header .navbar-brand.logo img {
   max-width: 100%;
+}
+
+.header .navbar .navbar-toggler {
+  padding: 0;
 }
 
 @media screen and (max-width: 992px) {
@@ -509,9 +519,15 @@ p {
 }
 
 .navbar-brand.logo {
-  max-width: 195px;
+  max-width: 150px;
   -webkit-transition: all 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
   transition: all 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+}
+
+@media screen and (min-width: 768px), print {
+  .navbar-brand.logo {
+    max-width: 195px;
+  }
 }
 
 .navbar-brand.logo img {
