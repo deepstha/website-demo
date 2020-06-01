@@ -493,6 +493,11 @@ p {
   padding: 0;
 }
 
+.header .navbar .navbar-toggler-icon {
+  width: 1.2em;
+  height: 1.2em;
+}
+
 @media screen and (max-width: 992px) {
   .header .navbar .navbar-collapse {
     background-color: rgba(0, 85, 184, 0.96);
@@ -514,6 +519,7 @@ p {
 @media screen and (max-width: 992px) {
   .header .navbar-dark .nav-item .nav-link {
     padding-bottom: 15px;
+    padding-left: 0;
   }
 }
 
